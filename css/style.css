@@ -1,0 +1,186 @@
+
+/* YOUR CSS STYLES */
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text { font: 12px sans-serif; }
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
+	}
+
+.collection {
+	fill: #fff;
+	stroke: #ccc;
+	stroke-width: 2px;
+}
+
+.stats {
+	width: 760px;
+	margin: 0 auto;
+}
+
+.info {
+	width: 760px;
+	margin: 0 auto;
+}
+
+#tree{
+	width: 900px;
+	margin: 0 auto;
+
+}
+
+.quotes {
+	width: 760px;
+	margin: 0 auto;
+}
+
+.tabbing {
+	width: 650px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* carousel */
+
+
+#carousel-example-generic{
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.carousel-inner > .item > img{
+    width: 100%;
+}
+
+/* body customization */
+
+
+body {
+    margin: 0;
+    padding: 10;
+}
+
+header {
+    background:#66b3ff;
+    border:1px solid #CCC;
+    width:100%;
+    height: 90px;
+    margin:0px auto;
+    text-align: center;
+    font-family: Monaco;
+    
+}
+
+.title {
+	text-align: center;
+	text-shadow:
+	1px 1px 0 #CCC,
+	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+	3px 3px 0 #444;/* end of 4 level deep dark shadow */
+	width: 500;
+
+}
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+}
+
+.line {
+  fill: none;
+  stroke: #1C9A3D;
+  stroke-width: 1.5px;
+}
+
+.tooltip-circle {
+  fill: #96AB96;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 150px;                  
+  height: 25px;                 
+  padding: 2px;             
+  font-size: 10px;     
+  background: #FFFFE0;
+  border: 1px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+} 
+
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .75em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
